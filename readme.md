@@ -3,6 +3,9 @@
 
    npm install ershan -g
 
+## 初始化 源码
+
+   ershan -i 
 
 ## git 地址
 
@@ -22,6 +25,7 @@
 node bin/index.js -r 
 
 ### 发布后使用
+
 ershan -r   一步，提交代码
 
     
