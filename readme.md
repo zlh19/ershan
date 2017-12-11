@@ -3,6 +3,11 @@
 
    npm install ershan -g
 
+
+## git 地址
+
+    https://github.com/zlh19/ershan.git
+
 ### 项目背景
     git 提交代码繁琐，流程简化
 
@@ -13,7 +18,10 @@
     inquirer
     shelljs
 
-### 使用
+###本地运行
+node bin/index.js -r 
+
+### 发布后使用
 ershan -r   一步，提交代码
 
     
