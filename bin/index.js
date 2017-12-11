@@ -14,10 +14,28 @@ progarm
 
 
 const options=['init','test','prepublish']
+const envs=['node','npm','git']
+const msg=
+`
+    环境要求：
+        node(v4.0),
+        npm,
+        git
+`
+
+const checkEnv = () => {
+    envs.forEach(env => {
+        if (!shell.which(env)) {
+            console.log(chalk.red(msg));
+            shell.exit(1);
+        }
+    })
+}
 
 options.forEach(option => {
     const value = progarm[option];
     if (value) {
+        checkEnv()
         require(`../lib/${option}`)();
     }
 });
