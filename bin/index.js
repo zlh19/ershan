@@ -38,5 +38,6 @@ options.forEach(option => {
         checkEnv()
         require(`../lib/${option}`)();
     }
+    console.log(1)
 });
 
